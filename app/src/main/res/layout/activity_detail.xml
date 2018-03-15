@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WithHeigthFull">
+
+    <LinearLayout
+        style="@style/LinearDetails">
+
+        <RelativeLayout
+            style="@style/RelativeDetails">
+
+            <View
+                android:id="@+id/view_sup"
+                style="@style/ViewDecoration"
+                />
+            <ImageView
+                android:id="@+id/image_iv"
+                style="@style/SandwichImage"/>
+            <View
+                style="@style/ViewDecoration"
+                android:layout_below="@id/image_iv"
+                />
+
+            <TextView
+                android:id="@+id/texto_conocido"
+                style="@style/TextsDefault"
+                android:text="@string/detail_also_known_as_label"
+                android:layout_below="@id/image_iv"/>
+
+            <TextView
+                android:id="@+id/also_known_tv"
+                style="@style/TextInfoSandwich"
+                android:layout_below="@id/texto_conocido"/>
+
+            <TextView
+                android:id="@+id/lugar_de_origen_text"
+                style="@style/TextsDefault"
+                android:text="@string/detail_place_of_origin_label"
+                android:layout_below="@id/image_iv"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/origin_tv"
+                style="@style/TextInfoSandwich"
+                android:layout_below="@id/lugar_de_origen_text"
+                android:layout_alignParentRight="true"/>
+            <View
+                style="@style/ViewDecorationCorto"
+                android:layout_below="@id/also_known_tv"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/LinearDetails">
+
+            <TextView
+                style="@style/TextsDefault"
+                android:text="@string/detail_ingredients_label" />
+
+            <TextView
+                style="@style/TextInfoSandwich"
+                android:id="@+id/ingredients_tv"
+                android:layout_gravity="center"/>
+            <View
+                style="@style/ViewDecorationCorto"
+                android:layout_below="@id/ingredients_tv"
+                />
+
+            <TextView
+                style="@style/TextsDefault"
+                android:text="@string/detail_description_label"/>
+
+            <TextView
+                style="@style/TextInfoSandwich"
+                android:textSize="15sp"
+                android:id="@+id/description_tv"/>
+
+            <View
+                style="@style/ViewDecoration"
+                android:layout_below="@id/description_tv"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

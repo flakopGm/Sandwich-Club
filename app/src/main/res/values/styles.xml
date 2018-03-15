@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- ListView. -->
+    <style name="EstiloListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:dividerHeight">@dimen/min_view</item>
+        <item name="android:divider">@color/colorPrimary</item>
+    </style>
+
+    <!-- Layout con with&heigth match_parent. -->
+    <style name="WithHeigthFull">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- RelativeLayout DetailActivity -->
+    <style name="RelativeDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Estilo view -->
+    <style name="ViewDecoration">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/min_view</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- Estilo view corto -->
+    <style name="ViewDecorationCorto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/min_view</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <!-- Estilo imagen sandwich -->
+    <style name="SandwichImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_photo</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:contentDescription">@string/sandwich_picture_content_description</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_below">@id/view_sup</item>
+    </style>
+
+    <!-- Estilo textos base info sandwich -->
+    <style name="TextsDefault">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/separation_text</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <!-- Estilo LinearLayout DetailsActivity -->
+    <style name="LinearDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Estilo info sandwich -->
+    <style name="TextInfoSandwich">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/separation_min</item>
+        <item name="android:paddingBottom">@dimen/separation_min</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+    </style>
+</resources>
